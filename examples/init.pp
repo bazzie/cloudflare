@@ -17,7 +17,7 @@ cfrecord {$::hostname:
   type     => 'A',
   content  => [$::ipaddress],
   cf_key   => '',
-  cf_email => 'bas@wildemann.nl',
+  cf_email =>  'bas@wildemann.nl',
 }
 
 cfrecord {'nextworking.nl':
@@ -28,4 +28,3 @@ cfrecord {'nextworking.nl':
   cf_key   => '',
   cf_email => 'bas@wildemann.nl',
 }
-

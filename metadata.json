@@ -5,6 +5,7 @@
   "summary": null,
   "license": "Apache-2.0",
   "source": "",
+  "summary": "Cloudflare Puppet module",
   "project_page": null,
   "issues_url": null,
   "dependencies": [
@@ -12,4 +13,3 @@
   ],
   "data_provider": null
 }
-
