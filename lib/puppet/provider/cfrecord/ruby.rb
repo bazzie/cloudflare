@@ -1,4 +1,5 @@
-require 'cloudflare'
+require 'cloudflare' if Puppet.features.cloudflare?
+
 
 Puppet::Type.type(:cfrecord).provide(:ruby) do
 
