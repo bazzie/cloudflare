@@ -17,7 +17,6 @@ Puppet::Type.type(:cfrecord).provide(:ruby) do
     name = resource[:name]
     content = resource[:content]
     begin
-      p "in record new"
       cf.rec_new(zone, type, name, content, 1)
     rescue => e 
       p e.message
