@@ -2,6 +2,8 @@ require 'cloudflare'
 
 Puppet::Type.type(:cfrecord).provide(:ruby) do
 
+  confine :feature => :cloudflare
+
   def exists?
     begin
       record_exists(resource[:zone], resource[:name])

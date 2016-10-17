@@ -1,8 +1,6 @@
 Puppet::Type.newtype(:cfrecord) do
   ensurable
 
-  confine :feature => :cloudflare
-
   #validate do
   #  fail('Use type \'cfmx\' for MX records') if self[:type] == :MX
   #end 
